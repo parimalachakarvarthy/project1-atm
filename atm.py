@@ -45,3 +45,17 @@ elif choice==3:
 elif choice==4:
     print("Thank you for using ATM")
 conn.close()
+
+
+----------SQL Database Code----------------
+-----ATM OPERATION-----------
+--------DB Creation----------
+create database ATMDB
+--------Table Creation-------
+create table ATMAccount(acc_no int primary key,customer_name varchar(100),pin int,balance decimal(10,2))
+insert into ATMAccount values(102021,'Ravi',1111,15000.00),(102022,'Geetha',2222,18000.00),
+(102023,'Priya',3333,12000.00),(102024,'Pavithra',4444,17000.00),(102025,'Archana',5555,13500.00),
+(102026,'Giri',6666,21000.00),(102027,'Rajinikanth',7777,28000.00),(102028,'Anbarasan',8888,23000.00),
+(102029,'Kavin',9999,24500.00),(102030,'Hari',1010,22500.00)
+----------Read/View the Table----
+select * from ATMAccount
